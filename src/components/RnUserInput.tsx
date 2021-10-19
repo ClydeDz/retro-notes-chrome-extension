@@ -25,7 +25,7 @@ const RnUserInput = (props: IRnUserInputProps) => {
     };
 
     return (
-        <div>
+        <div aria-label="User input">
             <RnHeading text={text} />
             <RnTextarea handleOnChange={updateStorage} text={componentStorage} />
         </div>

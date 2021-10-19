@@ -7,7 +7,7 @@ const RnButton = (props: IRnTextareaProps) => {
     const {text, handleOnClick} = props;
 
     return (
-        <button onClick={handleOnClick}>{text}</button>
+        <button onClick={handleOnClick} aria-label="Button">{text}</button>
     );
 };
 

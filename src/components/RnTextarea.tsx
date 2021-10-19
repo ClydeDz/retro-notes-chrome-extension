@@ -7,7 +7,7 @@ const RnTextarea = (props: IRnTextareaProps) => {
     const {text, handleOnChange} = props;
 
     return (
-        <textarea value={text} onChange={handleOnChange} />
+        <textarea value={text} onChange={handleOnChange} aria-label="Text area"/>
     );
 };
 

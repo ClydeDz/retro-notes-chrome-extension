@@ -6,7 +6,7 @@ const RnHeading = (props: IRnTextareaProps) => {
     const {text} = props;
 
     return (
-        <h2>{text}</h2>
+        <h2 aria-label="Heading">{text}</h2>
     );
 };
 
