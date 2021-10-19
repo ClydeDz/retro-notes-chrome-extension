@@ -6,6 +6,11 @@ import { chrome } from "jest-chrome";
 global.chrome = chrome;
 
 describe("<App />", () => {
+  test("snapshot testing the default view", () => {
+    const view = render(<App />);
+    expect(view).toMatchSnapshot();
+  });
+
   test("renders the main elements of the app", () => {
     render(<App />);
     const wellElement: HTMLElement = screen.getByText(/What went well/i);

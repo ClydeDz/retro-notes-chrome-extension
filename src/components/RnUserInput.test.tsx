@@ -7,6 +7,11 @@ import React from "react";
 global.chrome = chrome;
 
 describe("<RnUserInput />", () => {
+  test("snapshot testing the default view", () => {
+    const view = render(<RnUserInput text="Click me" componentKey="Abc" />);
+    expect(view).toMatchSnapshot();
+  });
+
   test("renders the default view", () => {
     render(<RnUserInput text="Click me" componentKey="Abc" />);
     const headingElement: HTMLElement = screen.getByText(/Click me/i);

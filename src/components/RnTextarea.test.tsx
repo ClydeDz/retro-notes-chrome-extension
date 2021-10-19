@@ -2,6 +2,12 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import RnTextarea from "./RnTextarea";
 
 describe("<RnTextarea />", () => {
+  test("snapshot testing the default view", () => {
+    const mockOnChange = jest.fn();
+    const view = render(<RnTextarea text="Test content" handleOnChange={mockOnChange}/>);
+    expect(view).toMatchSnapshot();
+  });
+
   test("renders the contents of text area", () => {
     const mockOnChange = jest.fn();
     render(<RnTextarea text="Test content" handleOnChange={mockOnChange}/>);
