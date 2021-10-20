@@ -1,0 +1,35 @@
+name: Build chrome extension
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build chrome extension
+    runs-on: ubuntu-latest    
+    
+    steps:      
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 13.x
+    
+    - name: Install NPM packages
+      run: npm ci
+    
+    - name: Build project
+      run: npm run build
+    
+    - name: Run tests and produce reports
+      run: npm run test:ci
+    
+    - name: Publish test results
+      uses: IgnusG/jest-report-action@v2.3.3
+      if: always()  
+      with:
+        access-token: ${{ secrets.GITHUB_TOKEN }}   
