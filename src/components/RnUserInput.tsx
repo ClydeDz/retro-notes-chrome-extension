@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import StorageApi from "../api/Storage";
 import RnHeading from "./RnHeading";
 import RnTextarea from "./RnTextarea";
 
@@ -12,16 +13,13 @@ const RnUserInput = (props: IRnUserInputProps) => {
     const [componentStorage, setComponentStorage] = useState("");
 
     useEffect(() => {
-        chrome.storage.sync.get([componentKey], function(result: any): void {
-            const storageValue: any = result[componentKey];
-            setComponentStorage(storageValue);
-        });
+        StorageApi.getStorage(componentKey, setComponentStorage);
     }, [componentKey]);
 
     const updateStorage = (e:any) => {
         const userInput: string = e.target.value;
         setComponentStorage(userInput);
-        chrome.storage.sync.set({[componentKey]: userInput});
+        StorageApi.setStorage(componentKey, userInput);
     };
 
     return (
