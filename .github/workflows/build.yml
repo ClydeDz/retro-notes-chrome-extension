@@ -32,4 +32,16 @@ jobs:
       uses: IgnusG/jest-report-action@v2.3.3
       if: always()  
       with:
-        access-token: ${{ secrets.GITHUB_TOKEN }}   
+        access-token: ${{ secrets.GITHUB_TOKEN }} 
+
+    - name: Publish code coverage results
+      uses: romeovs/lcov-reporter-action@v0.2.19
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        lcov-file: ./coverage/lcov.info
+
+    - name: Upload production-ready build files
+      uses: actions/upload-artifact@v2
+      with:
+        name: production-files
+        path: ./build  
