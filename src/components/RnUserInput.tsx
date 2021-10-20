@@ -16,7 +16,7 @@ const RnUserInput = (props: IRnUserInputProps) => {
             const storageValue: any = result[componentKey];
             setComponentStorage(storageValue);
         });
-    }, []);
+    }, [componentKey]);
 
     const updateStorage = (e:any) => {
         const userInput: string = e.target.value;
