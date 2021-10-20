@@ -26,7 +26,7 @@ jobs:
       run: npm run build
     
     - name: Run tests and produce reports
-      run: npm run test
+      run: npm run test:ci
     
     - name: Publish test results
       uses: IgnusG/jest-report-action@v2.3.3
