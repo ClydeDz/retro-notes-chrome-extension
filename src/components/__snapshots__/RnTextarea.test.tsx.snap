@@ -7,6 +7,7 @@ Object {
     <div>
       <textarea
         aria-label="Text area"
+        placeholder="What are you thinking?"
       >
         Test content
       </textarea>
@@ -15,6 +16,7 @@ Object {
   "container": <div>
     <textarea
       aria-label="Text area"
+      placeholder="What are you thinking?"
     >
       Test content
     </textarea>

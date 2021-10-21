@@ -15,6 +15,7 @@ Object {
         </h2>
         <textarea
           aria-label="Text area"
+          placeholder="What are you thinking?"
         />
       </div>
     </div>
@@ -30,6 +31,7 @@ Object {
       </h2>
       <textarea
         aria-label="Text area"
+        placeholder="What are you thinking?"
       />
     </div>
   </div>,

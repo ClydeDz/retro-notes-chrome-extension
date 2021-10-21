@@ -7,7 +7,12 @@ const RnTextarea = (props: IRnTextareaProps) => {
     const {text, handleOnChange} = props;
 
     return (
-        <textarea value={text} onChange={handleOnChange} aria-label="Text area"/>
+        <textarea
+            value={text}
+            placeholder="What are you thinking?"
+            onChange={handleOnChange}
+            aria-label="Text area"
+        />
     );
 };
 
