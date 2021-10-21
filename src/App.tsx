@@ -1,11 +1,14 @@
 import "./styles/App.css";
 import RnUserInput from "./components/RnUserInput";
 import { Elements } from "./constants/Elements";
+import RnFooter from "./components/RnFooter";
+import RnHeader from "./components/RnHeader";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <RnHeader />
+      <main>
         {Elements.map(element => {
             return (
               <div className="col" key={element.componentKey}>
@@ -13,7 +16,8 @@ function App() {
               </div>
             );
         })}
-      </header>
+      </main>
+      <RnFooter />
     </div>
   );
 }
