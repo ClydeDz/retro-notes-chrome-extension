@@ -15,7 +15,7 @@ describe("<App />", () => {
     render(<App />);
     const wellElement: HTMLElement = screen.getByText(/What went well/i);
     const didntGoWellElement: HTMLElement = screen.getByText(/What didn't go well/i);
-    const notesElement: HTMLElement = screen.getByText(/Notes/i);
+    const notesElement: HTMLElement = screen.getByText(/Additional notes/i);
 
     expect(wellElement).toBeInTheDocument();
     expect(didntGoWellElement).toBeInTheDocument();

@@ -16,6 +16,6 @@ export const Elements: IElement[] = [
     },
     {
         componentKey: `${Constants.APPKEY}-notes`,
-        text: "Notes"
+        text: "Additional notes"
     }
 ];

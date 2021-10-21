@@ -6,11 +6,14 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="App"
+        class="app"
       >
-        <header
-          class="App-header"
-        >
+        <header>
+          <h1>
+            Retro Notes
+          </h1>
+        </header>
+        <main>
           <div
             class="col"
           >
@@ -52,24 +55,72 @@ Object {
               <h2
                 aria-label="Heading"
               >
-                Notes
+                Additional notes
               </h2>
               <textarea
                 aria-label="Text area"
               />
             </div>
           </div>
-        </header>
+        </main>
+        <footer>
+          <p>
+            <a
+              href="https://github.com/ClydeDz/retro-notes-chrome-extension/blob/main/docs/README.md"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Why retro notes?
+            </a>
+             | 
+            <a
+              href="https://github.com/ClydeDz/retro-notes-chrome-extension/issues/new/choose"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Have an idea?
+            </a>
+             | 
+            <a
+              href="https://github.com/ClydeDz/retro-notes-chrome-extension/issues/new/choose"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Report an issue
+            </a>
+             | 
+            <a
+              href="https://github.com/sponsors/ClydeDz"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Sponsor
+            </a>
+          </p>
+          <p>
+            Developed by 
+            <a
+              href="https://clydedsouza.net/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Clyde D'Souza
+            </a>
+          </p>
+        </footer>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="App"
+      class="app"
     >
-      <header
-        class="App-header"
-      >
+      <header>
+        <h1>
+          Retro Notes
+        </h1>
+      </header>
+      <main>
         <div
           class="col"
         >
@@ -111,14 +162,59 @@ Object {
             <h2
               aria-label="Heading"
             >
-              Notes
+              Additional notes
             </h2>
             <textarea
               aria-label="Text area"
             />
           </div>
         </div>
-      </header>
+      </main>
+      <footer>
+        <p>
+          <a
+            href="https://github.com/ClydeDz/retro-notes-chrome-extension/blob/main/docs/README.md"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Why retro notes?
+          </a>
+           | 
+          <a
+            href="https://github.com/ClydeDz/retro-notes-chrome-extension/issues/new/choose"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Have an idea?
+          </a>
+           | 
+          <a
+            href="https://github.com/ClydeDz/retro-notes-chrome-extension/issues/new/choose"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Report an issue
+          </a>
+           | 
+          <a
+            href="https://github.com/sponsors/ClydeDz"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Sponsor
+          </a>
+        </p>
+        <p>
+          Developed by 
+          <a
+            href="https://clydedsouza.net/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Clyde D'Souza
+          </a>
+        </p>
+      </footer>
     </div>
   </div>,
   "debug": [Function],
