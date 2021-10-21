@@ -6,4 +6,10 @@ describe("<RnFooter />", () => {
     const view = render(<RnFooter />);
     expect(view).toMatchSnapshot();
   });
+
+  test("renders all the links", () => {
+    const {container} = render(<RnFooter />);
+    const aTags = container.querySelectorAll("a");
+    expect(aTags.length).toBe(5);
+  });
 });
