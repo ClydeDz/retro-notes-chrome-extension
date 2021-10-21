@@ -6,7 +6,7 @@ const RnFooter = () => {
     return (
         <footer>
             <p>
-                <a href={Links.WHY_RETRONOTES} target="_blank" rel="noreferrer">Why retro notes?</a>{separator}
+                <a href={Links.WHY_RETRONOTES} target="_blank" rel="noreferrer">Why Retro Notes?</a>{separator}
                 <a href={Links.SUBMIT_IDEA} target="_blank" rel="noreferrer">Have an idea?</a>{separator}
                 <a href={Links.SUBMIT_ISSUE} target="_blank" rel="noreferrer">Report an issue</a>{separator}
                 <a href={Links.SPONSOR} target="_blank" rel="noreferrer">Sponsor</a>
