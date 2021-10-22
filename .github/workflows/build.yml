@@ -65,7 +65,7 @@ jobs:
         args: zip -qq -r extension.zip build
 
     - name: Publish to Chrome store
-      uses: Klemensas/chrome-extension-upload-action@$VERSION
+      uses: Klemensas/chrome-extension-upload-action@v1.3
       with:
         refresh-token: ${{ secrets.CHROME_REFRESH_TOKEN }}
         client-id: ${{ secrets.CHROME_CLIENT_ID }}
