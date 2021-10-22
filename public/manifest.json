@@ -1,11 +1,11 @@
 {
   "name": "Retro Notes",
-  "description": "Retro notes desc",
-  "version": "0.1",
+  "description": "Make a note of what went well, what didn't go well and some additional notes for your next retrospective meeting.",
+  "version": "0.1.2",
   "manifest_version": 3,
   "action": {
       "default_popup": "index.html",
-      "default_title": "Open the popup"
+      "default_title": "Open Retro Notes"
   },
   "icons": {
       "16": "RnIcon16.png",
@@ -13,6 +13,6 @@
       "128": "RnIcon128.png"
   },
   "permissions": [
-    "activeTab", "storage"
+    "storage"
   ]
 }
