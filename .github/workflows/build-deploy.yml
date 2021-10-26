@@ -1,4 +1,4 @@
-name: Build chrome extension
+name: Build and deploy chrome extension
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         path: ./build
 
   deploy:
-    name: Deploy
+    name: Deploy chrome extension
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'

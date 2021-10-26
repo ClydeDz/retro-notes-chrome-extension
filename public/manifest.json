@@ -1,7 +1,7 @@
 {
   "name": "Retro Notes",
   "description": "Make a note of what went well, what didn't go well and some additional notes for your next retrospective meeting.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "action": {
       "default_popup": "index.html",
