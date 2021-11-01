@@ -1,8 +1,9 @@
 {
   "name": "Retro Notes",
   "description": "Make a note of what went well, what didn't go well and some additional notes for your next retrospective meeting.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "manifest_version": 3,
+  "homepage_url": "https://github.com/ClydeDz/retro-notes-chrome-extension",
   "action": {
       "default_popup": "index.html",
       "default_title": "Open Retro Notes"
