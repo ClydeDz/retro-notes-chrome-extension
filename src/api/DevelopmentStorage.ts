@@ -1,14 +1,13 @@
-import { Constants } from "../constants/Constants";
+import { staticStorageValues } from "../constants/StaticStorageValues";
+import { IDevelopmentStorage } from "../interfaces/IDevelopmentStorage";
 import { IStaticStorage } from "../interfaces/IStaticStorage";
-import { IStorageApi } from "../interfaces/IStorage";
 
-const staticStorage: IStaticStorage = {
-    [`${Constants.APPKEY}-wentwell`] : "This went well",
-    [`${Constants.APPKEY}-wentbad`] : "This didn't go well",
-    [`${Constants.APPKEY}-notes`] : "This is a note"
-};
+let staticStorage: IStaticStorage = staticStorageValues;
 
-const DevelopmentStorageApi: IStorageApi = {
+const DevelopmentStorageApi: IDevelopmentStorage = {
+    initStorage: (storageDependency: IStaticStorage) => {
+        staticStorage = storageDependency;
+    },
     getStorage: (componentKey: string, callback: Function) => {
         callback(staticStorage[componentKey]);
     },
